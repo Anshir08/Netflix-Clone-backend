@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://Anshir:otjvkvV7BhABrd12@cluster0.t2b85ds.mongodb.net/?retryWrites=true", {
-  dbName:netflix,
+  dbName:"netflix",
 }).then(() => {
   console.log("DB Connected Successfully");
 }).catch((err) => {
