@@ -8,9 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/netflix", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect("mongodb+srv://Anshir:otjvkvV7BhABrd12@cluster0.t2b85ds.mongodb.net/?retryWrites=true", {
+  dbName:netflix,
 }).then(() => {
   console.log("DB Connected Successfully");
 }).catch((err) => {
