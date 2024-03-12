@@ -5,12 +5,7 @@ const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 
-app.use(
-  cors({
-  origin: ["https://netflix-clone-frontend-kz6z.onrender.com"],
-  methods:["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://Anshir:otjvkvV7BhABrd12@cluster0.t2b85ds.mongodb.net/?retryWrites=true", {
