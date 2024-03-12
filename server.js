@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-  origin: ["https://netflix-clone-frontend-kz6z.onrender.com/"],
+  origin: ["https://netflix-clone-frontend-kz6z.onrender.com"],
   methods:["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));
